@@ -46,5 +46,11 @@ table {
       }
   }
   .dialogue-container {
-    background-color: green($color: #000000);
+    background-color: #85ce85;
+    width: 11%;
+    position: absolute;
+    top: 0px;
+    left: 37rem;
+    padding-left: 43px;
+    animation-fill-mode: forwards;
   }

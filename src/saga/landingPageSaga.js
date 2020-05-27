@@ -1,18 +1,16 @@
-import {  put, takeEvery , delay} from "redux-saga/effects";
+import {  put, takeLatest , delay} from "redux-saga/effects";
 import * as ActionConstants from "../action/ActionsConstants";
 import * as actions from '../action/Actions'
 
 
 function* showDialogue() {
-    put(actions.showDialogue(true))
-
-    setTimeout(()=>{
-        put(actions.showDialogue(false))
-    },3000)
+    yield put(actions.showDialogue(true))
+   yield delay(2000)
+       yield put(actions.showDialogue(false))
 }
 
 function* landingPageSaga() {
-    yield takeEvery(ActionConstants.SHOW_DATA, showDialogue);
+    yield takeLatest(ActionConstants.SHOW_DATA, showDialogue);
 }
 
 
