@@ -1,0 +1,50 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .address-container {
+    display: flex;
+    font-size: larger;
+    margin: 30px;
+    border: grey solid 2px;
+    width: 70%;
+
+      .address-viewer {
+        display: flex;
+         justify-content: space-between;
+         align-items: flex-start;
+         height: 2rem;
+         width: 13rem;
+         background: #b8d8b4;
+        margin: 15px;
+        border: black solid 1px;
+         margin-left: -11rem;
+        padding: 48px;
+        box-shadow: 3px 3px 3px;;
+      }
+
+      .address-label {
+        margin: 31px;
+        width: 70%;
+      }
+      .fallback-string {
+        margin-top: 50px;
+      }
+  }
+  .dialogue-container {
+    background-color: green($color: #000000);
+  }
